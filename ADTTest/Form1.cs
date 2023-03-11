@@ -27,7 +27,7 @@ namespace ADTTest
             }
             else if (user == "" || password == "")
             {
-                MessageBox.Show("Ако сте указали сървър, попълнете потребител и парола");
+                MessageBox.Show("ГЂГЄГ® Г±ГІГҐ ГіГЄГ Г§Г Г«ГЁ Г±ГєГ°ГўГєГ°, ГЇГ®ГЇГєГ«Г­ГҐГІГҐ ГЇГ®ГІГ°ГҐГЎГЁГІГҐГ« ГЁ ГЇГ Г°Г®Г«Г ");
                 return;
             }
             else
@@ -42,7 +42,7 @@ namespace ADTTest
             }
             catch (Exception)
             {
-                MessageBox.Show("Неуспешно свързване");
+                MessageBox.Show("ГЌГҐГіГ±ГЇГҐГёГ­Г® Г±ГўГєГ°Г§ГўГ Г­ГҐ");
                 Success.Visible = false;
                 comboBox1.Text = "";
                 comboBox2.Text = "";
@@ -65,7 +65,7 @@ namespace ADTTest
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("Базата не е на Микроинвест");
+                MessageBox.Show("ГЃГ Г§Г ГІГ  Г­ГҐ ГҐ Г­Г  ГЊГЁГЄГ°Г®ГЁГ­ГўГҐГ±ГІ");
                 comboBox1.Items.Clear();
                 comboBox1.Text = "";
                 return;
@@ -96,7 +96,7 @@ namespace ADTTest
         }
         public string conString;
 
-        MultiContext db = new MultiContext(""/*"Server=localhost;Database=Multi;User Id=sa;Password=AntoniLyubo;encrypt=false;"*/);
+        MultiContext db = new MultiContext("");
         public List<string> GetDatabaseList()
         {
             List<string> list = new List<string>();
